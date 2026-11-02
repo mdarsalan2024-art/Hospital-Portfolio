@@ -1,0 +1,13 @@
+:root{--bg:#f4f8fa;--sf:#fff;--tx:#12202b;--mu:#4a5b68;--pr:#0b6e8a;--pt:#fff;--bd:#c9d8e0;--er:#b00020;--ok:#1b6e3a}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1a22;--sf:#16252f;--tx:#e8f0f5;--mu:#a9bac6;--pr:#5cc3de;--pt:#06222b;--bd:#2c4150;--er:#ff8a9b;--ok:#6fd392}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,sans-serif}a{color:var(--pr)}.mu{color:var(--mu)}
+header{background:var(--sf);border-bottom:1px solid var(--bd);padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:space-between;align-items:center}
+nav{display:flex;flex-wrap:wrap;gap:4px}nav button{background:none;border:0;color:var(--tx);padding:8px 12px;border-radius:8px;font:inherit;cursor:pointer}nav [aria-current]{background:var(--pr);color:var(--pt)}
+main{max-width:1100px;margin:auto;padding:16px}.emg{background:var(--er);color:#fff;padding:8px;text-align:center;font-weight:600}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}.card,.panel{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:16px}
+.btn{background:var(--pr);color:var(--pt);border:0;border-radius:8px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer;margin:2px}.btn.s{background:none;color:var(--pr);border:2px solid var(--pr)}.btn:disabled{opacity:.5}
+:focus-visible{outline:3px solid var(--pr);outline-offset:2px}label,legend{font-weight:600;display:block}input,select,textarea{width:100%;padding:10px;border:1px solid var(--mu);border-radius:8px;background:var(--sf);color:var(--tx);font:inherit}
+input[type=radio]{width:auto}[aria-invalid=true]{border:2px solid var(--er)}.err{color:var(--er);font-size:.9rem}.f{margin-bottom:12px}
+.demo,.ok,.bad{padding:8px 12px;border-radius:6px;margin:8px 0;border-left:4px solid}.demo{border-color:#8a5a00;background:#8a5a0022}.ok{border-color:var(--ok);background:#1b6e3a22}.bad{border-color:var(--er);background:#b0002022}
+.two{display:grid;gap:16px;grid-template-columns:2fr 1fr}@media(max-width:800px){.two{grid-template-columns:1fr}}
+.slots{display:flex;flex-wrap:wrap;gap:8px}.slot{position:relative;border:2px solid var(--pr);border-radius:8px;padding:6px 12px;text-align:center;font-weight:600;cursor:pointer}.slot input{position:absolute;opacity:0;inset:0}.slot:has(input:checked){background:var(--pr);color:var(--pt)}.slot:focus-within{outline:3px solid var(--tx)}.slot.no{border-style:dashed;color:var(--mu);text-decoration:line-through;cursor:not-allowed}.slot small{display:block;font-weight:400}
