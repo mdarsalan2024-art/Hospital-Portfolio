@@ -1,0 +1,21 @@
+{
+  "name": "bc-roy-hospital",
+  "version": "1.0.0",
+  "description": "project for cv",
+  "homepage": "https://github.com/mdarsalan2024-art/Hospital-Portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/mdarsalan2024-art/Hospital-Portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdarsalan2024-art/Hospital-Portfolio.git"
+  },
+  "license": "ISC",
+  "author": "arsalan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  }
+}
